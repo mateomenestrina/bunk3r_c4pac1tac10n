@@ -6,9 +6,113 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-color: #333;
+  
+} 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.App .header{
+  padding: 15px;
+  text-align: center;
+}
+.App .header img{
+  display: inline-block;
+}
+#netowrks-list{}
+#netowrks-list > div{
+  background-color: #fff;
+  margin: 15px;
+  box-shadow: 1px 1px 10px -2px #000;
+}
+
+#netowrks-list .header{
+  text-align: left;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-size: 10px;
+  line-height: 10px;
+}
+#netowrks-list .content{
+  padding: 15px;
+ 
+}
+#netowrks-list .content .stats{
+  display: flex;
+  flex-direction: row;
+   flex-flow: row;
+}
+
+.metric{
+  flex-grow: 1;
+  text-align: center;
+}
+.metric .name{
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+}
+.metric .value{
+  font-size: 24px;
+}
+
+.Facebook .header{
+  background-color: #3b5998;
+}
+.Youtube .header{
+  background-color:red;
+}
+.Instagram .header{
+  background-color:fuchsia;
+}
+
+
+.posts-container{
+  display: flex;
+  flex-direction: row;  
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  
+}
+h2 {
+  position: relative;
+  margin: 20px;
+  font-size: 20px;
+  text-align: center; 
+  background-color: rgb(218, 216, 216);
+  border-radius: 20px;
+  padding: 10px;
+ 
+}
+.post{
+   
+    margin: 10px;
+    width: 360px;
+    position: relative;
+    min-height: 100px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px -2px;
+    border: solid 1px rgb(218, 215, 215);
+}
+.post img{
+  position: absolute;
+  top: 10px;
+}
+.post .title{
+  float: left;
+  padding-left: 110px;
+  width: 100%;
+  font-weight: bold;
+
+}
+.post .desc{
+  float: left;
+  padding-left: 110px;
+  width: 100%;
+  font-size: 12px;
 }

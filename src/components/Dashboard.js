@@ -11,13 +11,14 @@ class Dashboard extends Component {
     
     componentDidMount(){   
 
-    setInterval(() => {
+      // setInterval(() => {
         
-        fetch('https://local.bunkerdb.com/bunker-api/capacitacion')
+        //fetch('https://local.bunkerdb.com/bunker-api/capacitacion')
+        fetch('apiResponse.json')
         .then(response => response.json())
         .then(json => this.setState({networks: json.data.networks})   )
 
-      }, 500);
+      //}, 500);
         
     }
 

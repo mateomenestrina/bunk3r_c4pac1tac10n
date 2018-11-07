@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Metrica} from './Utils';
-
+import PostContainer from './PostContainer';
 
 class Network extends Component {
 
@@ -30,6 +30,10 @@ class Network extends Component {
               <div className='stats'>
                   { this.props.data.stats.map( (metric, index) => <Metrica name={metric.metric}  value ={metric.value}  key={index}   /> ) } 
               </div>
+
+
+            <PostContainer posts={this.props.data.posts} />
+        
 
         
           </div>
